@@ -17,7 +17,8 @@ char resp;
 float fat;
 	for(i=0;i<=9;i++){
 	for(j=0;j<=9;j++){
-		polt[i][j]=0;}
+		polt[i][j]=0;
+	        polt[i][j]=3;}
 aux=0;
 sair=2;
 while(sair==2){
