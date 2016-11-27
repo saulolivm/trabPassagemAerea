@@ -12,6 +12,12 @@ char email[30][40], cartao[30][40];
 int cadastrar, op, excluir, modificar;
 int sair, tele [30], cpf[30], rg[30], idade[30];
 int cont=1, aux, x, apagar, mod, vis;
+int polt[10][10],i,j,ocup;
+float fat;
+	for(i=0;i<=9;i++){
+	for(j=0;j<=9;j++){
+		polt[i][j]=0;
+	        polt[i][j]=3;}
 aux=0;
 sair=2;
 while(sair==2){
@@ -58,12 +64,26 @@ case 1:
         fflush(stdin);
         scanf("%[^\n]s", &email[aux]);
 
-        printf("Digite o número do cartao de credito para pagamento: ");
+        printf("Digite o nÃºmero do cartao de credito para pagamento: ");
         fflush(stdin);
         scanf("%d[^\n]s", &cartao[aux]);
         aux++;
         system("pause");
 
+case 5: // digitar poltrona 1
+    for (cont=0;cont<excluir;cont++){
+		printf("Digite a poltrona que deseja cancelar reserva: ");
+		scanf("%d",&polt[i][j]);
+		if(polt[i][j]==1){
+		polt[i][j]=0;
+		ocup--;
+		printf("Reserva cancelada.\n");
+				}
+		else {
+            printf(" Nao ha reservas para esta poltrona!\n");
+		}
+		system("pause");
+		}
 
 
     }
@@ -71,17 +91,8 @@ case 1:
 
 
     }
-
-
-
-
-
-
-
-
-
-
-
+	}
+	}
 }
 
 
