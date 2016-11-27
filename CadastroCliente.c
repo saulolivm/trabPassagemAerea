@@ -13,7 +13,6 @@ int cadastrar, op, excluir, modificar;
 int sair, tele [30], cpf[30], rg[30], idade[30];
 int cont=1, aux, x, apagar, mod, vis;
 int polt[10][10],i,j,ocup;
-char resp;
 float fat;
 	for(i=0;i<=9;i++){
 	for(j=0;j<=9;j++){
@@ -95,5 +94,3 @@ case 5: // digitar poltrona 1
 	}
 	}
 }
-
-
